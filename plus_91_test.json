@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "2513ad17-859c-44a7-98b3-f8dc7400b8fe",
+		"name": "api-laravel-passport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"abcd\",\n\t\"email\": \"abcd@plus91.com\",\n\t\"password\": \"123456\",\n\t\"password_confirmation\": \"123456\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/auth/signup",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup/activate",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/signup/activate/bUrL8TpCzVFTr09u8NCQ7TYM9D8SPF5LR9l6v0v6dhfTrJ1g4LPuGmJUooiC",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"signup",
+								"activate",
+								"bUrL8TpCzVFTr09u8NCQ7TYM9D8SPF5LR9l6v0v6dhfTrJ1g4LPuGmJUooiC"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"abcd@plus91.com\",\n\t\"password\": \"123456\",\n\t\"remember_me\": false\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/auth/login",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shortner",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYmJiZjY1ZTFkN2QxZTA3ZDk4N2I4NDg0NTNkMGFkNDJlOWI5NjdhZGNiMjdhNTM5MjM0ODhlMzRhMWI1OTI5YmJjZTMyMzM0NDcwNDkxMTgiLCJpYXQiOjE2Mzg4NTk1NTksIm5iZiI6MTYzODg1OTU1OSwiZXhwIjoxNjcwMzk1NTU5LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.PYU7-xa2O5hWFVygI0PKrYMXywLvXdPfFqZqMO6Y-pY7vCGnQjkXW9WGN1a4VBiY6YY83P5gmXXM4yzlz9fww8fq2Gf8k3fbyk9KnLC5W6kNTqWE603tGvjsUgr2SslIUah8cQDu3pF_UseHWbTxuoXBguwWYjGeDK-x8QcQkTRgOgbQ8zr0F9Rm1GPFfVeZ3X1bfW8bUYJ0v-XpF20jYpaEfP8Jc55ezxIeczdAVjM6W63OM45rVJu-l6U2wjwiihpMrzNn3T5MVaapmdP5HqL4FkpowCxg6ivOp_VFhO5gvd3fme51ksJxLffv80I2EycpvCcJYsvkWT3wdoHE58Rg-wDQq_LRWonJIIW2wvQpq3OmOQlTA6UUMINcaSBqCmpnkYXgyzwqqJBetN3qVuhAANXRIzZyvMmj86auxfG-16mXDqL_cLMPFxrs0-j1eqCzUMrvXjo5W1aUi8LRD6w8IiRC6qyejtTL_nDJb6DPLNcwuI8rowFELpiGcn4TTyv3zu0Ps3rGgHP-zqwAVwzWKSvkvFwgTQB4djwwRygECwEKQLfN29Ujq-1foJbImXIOvlJYON6Eto4jioc0DliWd-Vo6yDcxqRaUgj_fsTImmIM_GzucustxATaN-0nn9YL0dqFPg-l_51i17twgqTQS9ZyfK14j14Soh15SaI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"url\": \"http://abcd.com/aaaaa\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/shortner",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"shortner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImI3MWVkZTQwYjc1MGJjMTg0OWQxZGI4MjA1NzNhYjAxNmMxMzUxODBhODJhMTJlNDk3MTczMjhjZDk4Mzk3NWJlZmYwOWFiNTU5MzEzMzE3In0.eyJhdWQiOiIxIiwianRpIjoiYjcxZWRlNDBiNzUwYmMxODQ5ZDFkYjgyMDU3M2FiMDE2YzEzNTE4MGE4MmExMmU0OTcxNzMyOGNkOTgzOTc1YmVmZjA5YWI1NTkzMTMzMTciLCJpYXQiOjE1MjUzNjUxNDQsIm5iZiI6MTUyNTM2NTE0NCwiZXhwIjoxNTU2OTAxMTQ0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.T9eBMmxqIWZ2OvRHX9BpPJd0CHP8EvL2ftF9r8Q_n1KyxMGCmU67PQscZLGAsqlqFKiEDa_WhpiiOa8hQddep9sf4ZwrVTd1rFdwLpGSKhrtGnwZYCMEraeGTHweKDYopedwk3hOGffCD49RqkXLXWIhq_Iwgr-cvrvasj_cHSUdKq1FwtNjCzMX8xLrvfhcPFnPdTtresDxKD0e51tNc9a_iRAkIRq8TW_7jfofWCHdMwMPmIY-OTvnViq-cEik5Yk6zjA8w76CWNkgeVoxLxp0a22vEGh_0vZFEFcVvJmtyGNsKo8bjdheVHzbkhEKiGsqbWlafScB43rhNsBbiNI8EvX6Rk7KQScWChXeufTRzmRdlCOTShsG86Qbgv2u_nML9hUmfLDv4lR-TK4_c643WWI3kHBkQN4TNum8Lg62ofNRHU-QjCEnALVY0NI4eeZ2JQ19taId7AjZczW89fJmvsg5GLQ99BF4w2BYeqC1_tpKLuMSvwzLKqEnm24pkJ_KMmqweZyA431wZdvw3UR-e4K5-vSSMAXKVDxRR5hQf7a2UXAb4Oza94rcEb-2-fFr9UHFyOG_dRCPbWMABEEJQyfJwe1B8jYYZYmeNnyUNOeGHE26VijDw97uQbdxTXOaxJfuBdOY5JsVgzeJ3kPzZRKiklMaano4dAE8mi8"
+							}
+						],
+						"url": {
+							"raw": "127.0.0.1:8000/api/auth/logout",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYmJiZjY1ZTFkN2QxZTA3ZDk4N2I4NDg0NTNkMGFkNDJlOWI5NjdhZGNiMjdhNTM5MjM0ODhlMzRhMWI1OTI5YmJjZTMyMzM0NDcwNDkxMTgiLCJpYXQiOjE2Mzg4NTk1NTksIm5iZiI6MTYzODg1OTU1OSwiZXhwIjoxNjcwMzk1NTU5LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.PYU7-xa2O5hWFVygI0PKrYMXywLvXdPfFqZqMO6Y-pY7vCGnQjkXW9WGN1a4VBiY6YY83P5gmXXM4yzlz9fww8fq2Gf8k3fbyk9KnLC5W6kNTqWE603tGvjsUgr2SslIUah8cQDu3pF_UseHWbTxuoXBguwWYjGeDK-x8QcQkTRgOgbQ8zr0F9Rm1GPFfVeZ3X1bfW8bUYJ0v-XpF20jYpaEfP8Jc55ezxIeczdAVjM6W63OM45rVJu-l6U2wjwiihpMrzNn3T5MVaapmdP5HqL4FkpowCxg6ivOp_VFhO5gvd3fme51ksJxLffv80I2EycpvCcJYsvkWT3wdoHE58Rg-wDQq_LRWonJIIW2wvQpq3OmOQlTA6UUMINcaSBqCmpnkYXgyzwqqJBetN3qVuhAANXRIzZyvMmj86auxfG-16mXDqL_cLMPFxrs0-j1eqCzUMrvXjo5W1aUi8LRD6w8IiRC6qyejtTL_nDJb6DPLNcwuI8rowFELpiGcn4TTyv3zu0Ps3rGgHP-zqwAVwzWKSvkvFwgTQB4djwwRygECwEKQLfN29Ujq-1foJbImXIOvlJYON6Eto4jioc0DliWd-Vo6yDcxqRaUgj_fsTImmIM_GzucustxATaN-0nn9YL0dqFPg-l_51i17twgqTQS9ZyfK14j14Soh15SaI"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "127.0.0.1:8000/api/user",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PasswordReset",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"alfredo@modulr.io\"\n}"
+						},
+						"url": {
+							"raw": "http://api-laravel-passport.test/api/password/create",
+							"protocol": "http",
+							"host": [
+								"api-laravel-passport",
+								"test"
+							],
+							"path": [
+								"api",
+								"password",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"url": {
+							"raw": "http://api-laravel-passport.test/api/password/find/ioDrrybWRf4yXRuWszygAGtvQN0w9Z48QlpJSGR1WqW1M4RZOx5RiSpnyDv4",
+							"protocol": "http",
+							"host": [
+								"api-laravel-passport",
+								"test"
+							],
+							"path": [
+								"api",
+								"password",
+								"find",
+								"ioDrrybWRf4yXRuWszygAGtvQN0w9Z48QlpJSGR1WqW1M4RZOx5RiSpnyDv4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"alfredo@modulr.io\",\n\t\"password\": \"secret\",\n\t\"password_confirmation\": \"secret\",\n\t\"token\": \"ioDrrybWRf4yXRuWszygAGtvQN0w9Z48QlpJSGR1WqW1M4RZOx5RiSpnyDv4\"\n}"
+						},
+						"url": {
+							"raw": "http://api-laravel-passport.test/api/password/reset",
+							"protocol": "http",
+							"host": [
+								"api-laravel-passport",
+								"test"
+							],
+							"path": [
+								"api",
+								"password",
+								"reset"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
